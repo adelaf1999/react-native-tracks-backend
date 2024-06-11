@@ -11,7 +11,7 @@ router.get("/tracks", async (req, res, next) => {
 
     const tracks = await Track.find({userId: req.user._id});
 
-    res.send({tracks});
+    res.send(tracks);
 
 });
 
